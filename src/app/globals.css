@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug;
+  @apply text-2xl font-semibold leading-snug;
 }
 
 h4 {
