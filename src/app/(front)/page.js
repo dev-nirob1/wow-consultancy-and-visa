@@ -11,17 +11,17 @@ import Services from '../components/front/section/Services';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
       <WhyStydyinKorea />
       <Services />
-      <WhyChooseUs />
       <StudyProcess />
       <PartnerUniversities />
+      <WhyChooseUs />
       <Testimonials />
       <FaqSection />
       <CtaSection />
-    </div>
+    </>
   );
 };
 

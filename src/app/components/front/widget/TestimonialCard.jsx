@@ -17,11 +17,11 @@ const TestimonialCard = ({ quote, name, university, image }) => {
 
       <div className="flex gap-1 text-yellow-500 mt-4">
         {Array.from({ length: 5 }).map((_, i) => (
-          <FaStar key={i} className="text-sm" />
+          <FaStar key={i} className="text-xl" />
         ))}
       </div>
 
-      <p className="text-dark/70 mt-4">{quote}</p>
+      <p className="font-semibold mt-4">{quote}</p>
     </div>
   );
 };

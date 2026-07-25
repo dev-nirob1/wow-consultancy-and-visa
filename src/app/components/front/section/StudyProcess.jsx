@@ -44,20 +44,18 @@ const steps = [
 
 const StudyProcess = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-light">
       <div className="container">
         <SectionHeader
           subTitle="Steps"
           title="Your Study Abroad Process"
-          highlight="Study Abroad"
-          description="A simple, guided path from your first consultation to starting classes in South Korea."
-          className="mb-12 lg:mb-16"
+          className="mb-12"
         />
 
         <div className="relative">
           <div className="absolute left-7 lg:left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 lg:-translate-x-1/2" />
 
-          <div className="flex flex-col gap-12 lg:gap-16">
+          <div className="flex flex-col gap-8">
             {steps.map((step, index) => (
               <ProcessStep key={step.number} {...step} index={index} />
             ))}

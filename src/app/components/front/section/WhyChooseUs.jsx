@@ -34,7 +34,7 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-light">
       <div className="container">
         <SectionHeader
           subTitle="Why Choose Us"
