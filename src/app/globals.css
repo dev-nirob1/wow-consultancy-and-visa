@@ -67,5 +67,5 @@ h6 {
 }
 
 p {
-  @apply text-base sm:text-lg leading-relaxed;
+  @apply leading-relaxed;
 }
