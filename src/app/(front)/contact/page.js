@@ -43,7 +43,7 @@ const socials = [
 const ContactPage = () => {
     return (
         <>
-            <section className="pt-32 pb-16">
+            <section className="pt-32 pb-16 bg-light">
                 <div className="container">
                     <div className="grid lg:grid-cols-2 gap-5">
                         <div>
