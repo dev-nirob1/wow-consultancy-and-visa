@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #0001fc;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light: #f5f7fa;
+  --color-dark: #1f2937;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-plus-jakarta-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility container {
+  @apply w-[90%] mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1180px] 2xl:max-w-[1320px];
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-black);
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight;
+}
+
+h3 {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug;
+}
+
+h4 {
+  @apply text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug;
+}
+
+h5 {
+  @apply text-lg sm:text-xl lg:text-2xl font-medium leading-snug;
+}
+
+h6 {
+  @apply text-base sm:text-lg lg:text-xl font-medium leading-snug;
+}
+
+p {
+  @apply text-base sm:text-lg leading-relaxed;
 }
