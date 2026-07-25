@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CtaSection = () => {
   return (
-    <section className="py-16">
+    <section className="pb-16">
       <div className="container">
         <div className="relative bg-primary rounded-2xl overflow-hidden shadow-lg px-8 py-16 md:px-12 md:py-20 text-center">
           <span className="absolute -top-24 -left-12 w-72 h-72 rounded-full bg-linear-to-br from-white/10 to-white/0" />
