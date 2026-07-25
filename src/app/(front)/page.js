@@ -7,14 +7,16 @@ import Testimonials from '../components/front/section/Testimonials';
 import PartnerUniversities from '../components/front/section/PartnerUniversities';
 import StudyProcess from '../components/front/section/StudyProcess';
 import WhyChooseUs from '../components/front/section/WhyChooseUs';
+import Services from '../components/front/section/Services';
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <WhyStydyinKorea />
-      <WhyChooseUs/>
-      <StudyProcess/>
+      <Services />
+      <WhyChooseUs />
+      <StudyProcess />
       <PartnerUniversities />
       <Testimonials />
       <FaqSection />
