@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0001fc;
+  --color-primary: #6b6dfd;
+  --color-secondary: #4338ca;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-light: #f5f7fa;
+  --color-light: #eef1f5;
   --color-dark: #1f2937;
 
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-plus-jakarta-sans);
+  --font-heading: var(--font-outfit);
 
   --animate-marquee: marquee 30s linear infinite;
 
@@ -20,7 +21,6 @@
       transform: translateX(-50%);
     }
   }
-
 }
 
 @utility container {
@@ -41,13 +41,15 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
-
+button {
+  @apply cursor-pointer;
+}
 h1 {
   @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
 }
 
 h2 {
-  @apply text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight;
+  @apply text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight tracking-tight;
 }
 
 h3 {
@@ -55,7 +57,7 @@ h3 {
 }
 
 h4 {
-  @apply text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug;
+  @apply text-xl sm:text-2xl lg:text-xl font-semibold leading-snug;
 }
 
 h5 {

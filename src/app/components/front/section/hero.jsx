@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaCheck, FaStar } from "react-icons/fa6";
 
 const highlights = [
@@ -16,26 +17,26 @@ const Hero = () => {
             Your Trusted Path to{" "}
             <span className="text-primary">Study Abroad</span>
           </h1>
-          <p className="mt-6 max-w-lg">
-            We guide students through every step of the journey — from choosing
-            the right university to securing your visa, so you can focus on your
-            future.
+          <p className="mt-6 max-w-lg text-lg leading-8 font-medium">
+            Based in Busan, South Korea, we provide comprehensive support for
+            students aspiring to study abroad — from university admissions to
+            visa processing, our expert team guides you every step of the way.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <a
+            <Link
               href="/contact"
-              className="bg-primary text-white font-medium uppercase tracking-wide px-8 py-3.5 rounded-md hover:bg-primary/90 transition-colors duration-200"
+              className="bg-primary text-white font-medium uppercase tracking-wide px-8 py-3.5 rounded-md hover:bg-secondary transition-colors duration-200"
             >
               Free Consultation
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/services"
-              className="border border-dark/20 text-dark font-medium uppercase tracking-wide px-8 py-3.5 rounded-md hover:border-primary hover:text-primary transition-colors duration-200"
+              className="border border-secondary text-secondary font-medium uppercase tracking-wide px-8 py-3.5 rounded-md hover:border-primary hover:text-primary transition-colors duration-200"
             >
               Our Services
-            </a>
+            </Link>
           </div>
 
           <ul className="flex flex-wrap gap-x-8 gap-y-3 mt-10">

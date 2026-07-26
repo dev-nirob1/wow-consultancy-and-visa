@@ -13,22 +13,26 @@ const reasons = [
   {
     icon: FaUserGraduate,
     title: "Expert Counselors",
-    description: "Certified consultants with years of experience guiding students to top universities.",
+    description:
+      "Certified consultants with years of experience guiding students to top universities.",
   },
   {
     icon: FaPassport,
     title: "High Visa Success Rate",
-    description: "Proven track record of successful student visa approvals for South Korea.",
+    description:
+      "Proven track record of successful student visa approvals for South Korea.",
   },
   {
     icon: FaHandsHolding,
     title: "End-to-End Support",
-    description: "From university selection to landing in Korea, we're with you every step.",
+    description:
+      "From university selection to landing in Korea, we're with you every step.",
   },
   {
     icon: FaAward,
     title: "Trusted by Thousands",
-    description: "A growing community of students who achieved their study abroad dreams with us.",
+    description:
+      "A growing community of students who achieved their study abroad dreams with us.",
   },
 ];
 
@@ -42,11 +46,11 @@ const WhyChooseUs = () => {
           className="mb-12"
         />
 
-        <div className="grid lg:grid-cols-2 items-center gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           <div className="relative">
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/why-choose-us.avif"
+                src="/why-choose-us.jpg"
                 alt="Students who studied abroad with our guidance"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -54,9 +58,11 @@ const WhyChooseUs = () => {
               />
             </div>
 
-            <div className="absolute -bottom-8 -right-4 sm:right-4 bg-white rounded-2xl border border-dark/10 shadow-lg px-8 py-6 text-center">
-              <span className="block text-4xl font-heading font-bold text-primary">98%</span>
-              <span className="text-sm text-dark/70">Visa Success Rate</span>
+            <div className="absolute -bottom-8 -right-4 sm:right-4 bg-white rounded-lg border border-dark/10 shadow-lg px-8 py-6 text-center">
+              <span className="block text-4xl font-heading font-bold text-primary">
+                98%
+              </span>
+              <span className="text-sm font-semibold">Visa Success Rate</span>
             </div>
           </div>
 

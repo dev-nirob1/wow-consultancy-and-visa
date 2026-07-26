@@ -1,26 +1,25 @@
-// components/PartnerUniversities.jsx
+// components/StudentSuccess.jsx
 import Image from "next/image";
 import SectionHeader from "../common/SectionHeader";
 
 const universities = [
-  { name: "Seoul National University", logo: "/logo.png" },
-  { name: "Yonsei University", logo: "/logo.png" },
-  { name: "Korea University", logo: "/logo.png" },
-  { name: "Hanyang University", logo: "/logo.png" },
-  { name: "Sungkyunkwan University", logo: "/logo.png" },
-  { name: "Kyung Hee University", logo: "/logo.png" },
-  { name: "Ewha Womans University", logo: "/logo.png" },
-  { name: "Pusan National University", logo: "/logo.png" },
+  { name: "Seoul National University", logo: "/visa-success/student-1.jpg" },
+  { name: "Yonsei University", logo: "/visa-success/student-2.jpg" },
+  { name: "Korea University", logo: "/visa-success/student-3.jpg" },
+  { name: "Hanyang University", logo: "/visa-success/student-4.jpg" },
+  { name: "Sungkyunkwan University", logo: "/visa-success/student-5.jfif" },
+  { name: "Kyung Hee University", logo: "/visa-success/student-6.jfif" },
+  { name: "Ewha Womans University", logo: "/visa-success/student-7.jpg" },
+  { name: "Pusan National University", logo: "/visa-success/student-8.jpg" },
 ];
 
-const PartnerUniversities = () => {
+const StudentSuccess = () => {
   return (
     <section className="py-16">
       <div className="container">
         <SectionHeader
-          subTitle="Our Partners"
-          title="Partner Universities"
-          highlight="Universities"
+          subTitle="Our Students"
+          title="Student Success Stories"
           className="mb-12"
         />
       </div>
@@ -33,13 +32,13 @@ const PartnerUniversities = () => {
           {[...universities, ...universities].map((uni, index) => (
             <div
               key={`${uni.name}-${index}`}
-              className="flex items-center justify-center w-40 h-20 mx-8 shrink-0 relative grayscale hover:grayscale-0 transition-all duration-300"
+              className="relative w-60  aspect-[4/5] mx-6 shrink-0"
             >
               <Image
                 src={uni.logo}
                 alt={uni.name}
                 fill
-                sizes="160px"
+                sizes="240px"
                 className="object-contain"
               />
             </div>
@@ -50,4 +49,4 @@ const PartnerUniversities = () => {
   );
 };
 
-export default PartnerUniversities;
+export default StudentSuccess;

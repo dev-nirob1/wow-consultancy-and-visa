@@ -9,7 +9,6 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Study in Korea", href: "/study-in-korea" },
   { label: "Services", href: "/services" },
   { label: "Universities", href: "/universities" },
   { label: "Contact", href: "/contact" },

@@ -1,4 +1,4 @@
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -6,9 +6,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta-sans",
+  variable: "--font-outfit",
 });
 
 export const metadata = {
@@ -19,7 +19,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${plusJakartaSans.variable}`}>
+      <body className={`${inter.variable} ${outfit.variable}`}>
         {children}
       </body>
     </html>

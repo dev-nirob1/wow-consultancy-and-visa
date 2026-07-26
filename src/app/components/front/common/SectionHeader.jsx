@@ -10,8 +10,8 @@ const SectionHeader = ({
       className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : "text-left"} ${className}`}
     >
       {subTitle && (
-        <span className="relative inline-flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wide mb-4">
-          <span className="w-6 h-[2px] bg-primary" />
+        <span className="relative inline-flex items-center gap-2 text-secondary text-sm font-semibold uppercase tracking-wide mb-3">
+          <span className="w-6 h-0.5 bg-secondary rounded-md" />
           {subTitle}
         </span>
       )}

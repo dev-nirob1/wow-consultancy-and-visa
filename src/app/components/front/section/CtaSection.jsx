@@ -9,7 +9,7 @@ const CtaSection = () => {
           <span className="absolute -bottom-36 -right-24 w-96 h-96 rounded-full bg-linear-to-br from-white/10 to-white/0" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="text-white">Ready to Start Your Global Journey?</h2>
+            <h1 className="text-white text-3xl">Ready to Start Your Global Journey?</h1>
             <p className="mt-4 text-white text-xl font-medium">
               Join thousands of successful students. Get expert guidance on university selection, applications, and visas.
             </p>
