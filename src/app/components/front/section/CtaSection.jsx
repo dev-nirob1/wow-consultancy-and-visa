@@ -2,16 +2,19 @@ import Link from "next/link";
 
 const CtaSection = () => {
   return (
-    <section className="pb-16">
+    <section className=" bg-primary ">
       <div className="container">
-        <div className="relative bg-primary rounded-2xl overflow-hidden shadow-lg px-8 py-16 md:px-12 md:py-20 text-center">
+        <div className="relative overflow-hidden px-8 py-16 md:px-12 text-center">
           <span className="absolute -top-24 -left-12 w-72 h-72 rounded-full bg-linear-to-br from-white/10 to-white/0" />
           <span className="absolute -bottom-36 -right-24 w-96 h-96 rounded-full bg-linear-to-br from-white/10 to-white/0" />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h1 className="text-white text-3xl">Ready to Start Your Global Journey?</h1>
+            <h1 className="text-white text-3xl">
+              Ready to Start Your Global Journey?
+            </h1>
             <p className="mt-4 text-white text-xl font-medium">
-              Join thousands of successful students. Get expert guidance on university selection, applications, and visas.
+              Join thousands of successful students. Get expert guidance on
+              university selection, applications, and visas.
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
