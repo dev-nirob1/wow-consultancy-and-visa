@@ -15,7 +15,7 @@ const values = [
 
 const WhoWeAre = () => {
   return (
-    <section className="py-16">
+    <section className="pt-16 pb-24">
       <div className="container">
         <SectionHeader
           subTitle="Who We Are"
@@ -26,9 +26,9 @@ const WhoWeAre = () => {
 
         <div className="grid lg:grid-cols-2 items-center gap-16">
           <div className="relative">
-            <div className="relative w-4/5 aspect-[4/5] rounded-2xl overflow-hidden">
+            <div className="relative w-full max-h-[600px] aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/about/team-1.jpg"
+                src="/about.jfif"
                 alt="Wow Consultancy team"
                 fill
                 sizes="(max-width: 1024px) 80vw, 40vw"
@@ -36,9 +36,9 @@ const WhoWeAre = () => {
               />
             </div>
 
-            <div className="absolute bottom-0 right-0 w-3/5 aspect-[4/3] rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+            <div className="absolute -bottom-10 -right-10 w-3/5 aspect-[4/3] rounded-xl overflow-hidden border-4 border-white shadow-xl">
               <Image
-                src="/about/team-2.jpg"
+                src="/about-1.jpg"
                 alt="Student consultation session"
                 fill
                 sizes="(max-width: 1024px) 60vw, 30vw"
@@ -50,7 +50,7 @@ const WhoWeAre = () => {
           </div>
 
           <div>
-            <p className="text-dark/70">
+            <p className="text-lg">
               Founded with a simple belief — that every student deserves clear, honest guidance when planning their education abroad — Wow Consultancy and Visa has grown into a trusted name for students pursuing their academic dreams in South Korea. We combine deep knowledge of university admissions, visa regulations, and scholarship opportunities to guide students at every step.
             </p>
 
