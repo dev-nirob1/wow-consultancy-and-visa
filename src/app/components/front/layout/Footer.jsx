@@ -27,32 +27,36 @@ const Footer = () => {
             />
           </Link>
           <p className="text-white/70 max-w-xs">
-            Your trusted partner in shaping international academic careers. We provide end-to-end guidance for studying abroad.
+            Your trusted partner in shaping international academic careers. We
+            provide end-to-end guidance for studying abroad.
           </p>
           <div className="flex gap-4 mt-6">
-            
-             <a href="#"
+            <a
+              href="#"
               aria-label="Facebook"
               className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors duration-200"
             >
               <FaFacebookF className="text-sm" />
             </a>
-            
-             <a href="#"
+
+            <a
+              href="#"
               aria-label="Twitter"
               className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors duration-200"
             >
               <FaXTwitter className="text-sm" />
             </a>
-            
-             <a href="#"
+
+            <a
+              href="#"
               aria-label="Instagram"
               className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors duration-200"
             >
               <FaInstagram className="text-sm" />
             </a>
-            
-             <a href="#"
+
+            <a
+              href="#"
               aria-label="LinkedIn"
               className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors duration-200"
             >
@@ -65,22 +69,34 @@ const Footer = () => {
           <h6 className="text-white mb-6">Quick Links</h6>
           <ul className="flex flex-col gap-3">
             <li>
-              <Link href="/" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/study-in-korea" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/study-in-korea"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Study in Korea
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/services"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/about"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 About Us
               </Link>
             </li>
@@ -91,22 +107,34 @@ const Footer = () => {
           <h6 className="text-white mb-6">Support</h6>
           <ul className="flex flex-col gap-3">
             <li>
-              <Link href="/contact" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/contact"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/faq"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 FAQ
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/privacy"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <Link
+                href="/terms"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 Terms of Service
               </Link>
             </li>
@@ -118,17 +146,26 @@ const Footer = () => {
           <ul className="flex flex-col gap-4">
             <li className="flex items-start gap-3">
               <FaLocationDot className="text-primary mt-1 shrink-0" />
-              <span className="text-white/70">House 12, Road 5, Dhanmondi, Dhaka 1209, Bangladesh</span>
+              <span className="text-white/70">
+                Level 7, 1101/1, Jamila Latif Tower, Ahead of Adabor Police
+                Station, Ring Road, Shyamoli, Dhaka, Bangladesh, 1207
+              </span>
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-primary shrink-0" />
-              <a href="tel:+8801700000000" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <a
+                href="tel:+8801700000000"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 +880 1700-000000
               </a>
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-primary shrink-0" />
-              <a href="mailto:info@wowconsultancy.com" className="text-white/70 hover:text-primary transition-colors duration-200">
+              <a
+                href="mailto:info@wowconsultancy.com"
+                className="text-white/70 hover:text-primary transition-colors duration-200"
+              >
                 info@wowconsultancy.com
               </a>
             </li>
