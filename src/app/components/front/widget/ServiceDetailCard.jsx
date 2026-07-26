@@ -14,7 +14,7 @@ const ServiceDetailCard = ({
   return (
     <div className="flex flex-col lg:flex-row gap-8 ">
       <div className={`w-full lg:flex-1 ${isEven ? "" : "lg:order-2"}`}>
-        <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+        <div className="relative w-full aspect-square rounded-xl overflow-hidden">
           <Image
             src={image}
             alt={title}
@@ -35,7 +35,7 @@ const ServiceDetailCard = ({
               key={item}
               className="flex items-center gap-4 font-semibold text-dark bg-light border border-dark/10 rounded-lg px-4 py-3 shadow-sm"
             >
-              <FaCheck className="text-primary text-lg shrink-0" />
+              <FaCheck className="text-secondary text-lg shrink-0" />
               {item}
             </li>
           ))}

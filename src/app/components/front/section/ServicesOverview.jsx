@@ -1,51 +1,94 @@
-// components/ServicesOverview.jsx
-import Image from "next/image";
-import { FaCheck } from "react-icons/fa6";
+"use client";
+// components/ServicesOverview.jsx — Video Intro Section
 
-const highlights = [
-  "Personalized Guidance",
-  "Trusted University Network",
-  "Complete Visa Assistance",
-  "End-to-End Support",
-];
+import { useState } from "react";
+import { FaCirclePlay, FaXmark } from "react-icons/fa6";
+import Image from "next/image";
+import SectionHeader from "../common/SectionHeader";
+
+// Replace with actual YouTube video ID when available
+const VIDEO_ID = "dQw4w9WgXcQ";
 
 const ServicesOverview = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <section className="py-16">
-      <div className="container">
-        <div className="grid lg:grid-cols-2 items-center gap-8">
-          <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden">
+    <>
+      <section className="py-16 bg-light">
+        <div className="container">
+          <SectionHeader
+            subTitle="See How We Work"
+            title="Your Dream to Study in Korea — Made Simple"
+            align="center"
+            className="mb-10"
+          />
+
+          {/* Video thumbnail */}
+          <div
+            className="group relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          >
+            {/* Thumbnail image */}
             <Image
-              src="/why-choose-us.avif"
-              alt="Student consultation session"
+              src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
+              alt="Watch our intro video"
               fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 900px"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
+
+            {/* Play button */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative flex items-center justify-center">
+                {/* Ripple rings */}
+                <span className="absolute w-24 h-24 rounded-full bg-white/20 animate-ping" />
+                <span className="absolute w-20 h-20 rounded-full bg-white/10" />
+                <FaCirclePlay className="relative text-white text-7xl drop-shadow-2xl group-hover:scale-110 transition-transform duration-300" />
+              </div>
+            </div>
+
+            {/* Bottom label */}
+            <div className="absolute bottom-6 left-0 right-0 text-center">
+              <span className="bg-black/60 backdrop-blur-sm text-white text-sm font-medium px-4 py-2 rounded-full">
+                Watch Our Story — 2 min
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Modal overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&rel=0`}
+              title="Wow Consultancy and Visa — Intro Video"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className="w-full h-full"
             />
           </div>
 
-          <div>
-            <h2>
-              We Simplify Your Journey From <span className="text-primary">Admission to Visa</span>
-            </h2>
-            <p className="mt-4">
-              Our team handles every step of your study abroad process, so you can focus on preparing for your new academic journey with confidence.
-            </p>
-
-            <ul className="flex flex-col gap-4 mt-8">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-center gap-3">
-                  <span className="w-6 h-6 flex items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
-                    <FaCheck className="text-xs" />
-                  </span>
-                  <span className="font-medium text-dark">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Close button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white text-xl transition-colors duration-200"
+          >
+            <FaXmark />
+          </button>
         </div>
-      </div>
-    </section>
+      )}
+    </>
   );
 };
 
