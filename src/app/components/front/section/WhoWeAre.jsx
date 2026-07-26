@@ -21,8 +21,7 @@ const WhoWeAre = () => {
           subTitle="Who We Are"
           title="Helping Students Build Their Future Abroad"
           highlight="Future Abroad"
-          description="We are a team of dedicated consultants passionate about making international education accessible and stress-free for every student."
-          className="mb-12 lg:mb-16"
+          className="mb-12"
         />
 
         <div className="grid lg:grid-cols-2 items-center gap-16">
