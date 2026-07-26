@@ -42,7 +42,7 @@ const Navbar = () => {
       }`}
     >
       <nav className="container flex items-center justify-between py-2">
-        <Link href="/" className="relative w-auto h-18 shrink-0">
+        <Link href="/" className="relative w-auto h-15 shrink-0">
           <Image
             src="/logo.png"
             alt="Wow Consultancy and Visa"

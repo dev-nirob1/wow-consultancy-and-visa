@@ -1,7 +1,7 @@
+import PageHero from "@/app/components/front/common/PageHero";
 import SectionHeader from "@/app/components/front/common/SectionHeader";
 import CtaSection from "@/app/components/front/section/CtaSection";
 import UniversityCard from "@/app/components/front/widget/UniversityCard";
-
 
 const universities = [
   {
@@ -93,12 +93,15 @@ const universities = [
 const UniversitiesPage = () => {
   return (
     <>
-      <section className="pt-32 pb-16 lg:pt-44">
+      <PageHero
+        title="Universities"
+        description="Explore top-ranked universities across South Korea and find the right program to match your academic goals."
+      />
+      <section className="py-16">
         <div className="container">
           <SectionHeader
             subTitle="Our Partners"
             title="Partner Universities"
-            highlight="Universities"
             className="mb-12"
           />
 
