@@ -37,7 +37,7 @@ const Founder = () => {
           </div>
           <div className="relative w-full max-h-[600px] aspect-[5/6] rounded-xl overflow-hidden">
             <Image
-              src="/founder.jfif"
+              src="/founder.jpg"
               alt="Founder of Wow Consultancy and Visa"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -23,7 +23,7 @@ const WhoWeAre = () => {
           <div className="relative">
             <div className="relative w-full max-h-[600px] aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/about.jfif"
+                src="/who-we-are.jpg"
                 alt="Wow Consultancy team"
                 fill
                 sizes="(max-width: 1024px) 80vw, 40vw"

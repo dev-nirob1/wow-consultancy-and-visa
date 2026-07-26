@@ -7,8 +7,8 @@ const universities = [
   { name: "Yonsei University", logo: "/visa-success/student-2.jpg" },
   { name: "Korea University", logo: "/visa-success/student-3.jpg" },
   { name: "Hanyang University", logo: "/visa-success/student-4.jpg" },
-  { name: "Sungkyunkwan University", logo: "/visa-success/student-5.jfif" },
-  { name: "Kyung Hee University", logo: "/visa-success/student-6.jfif" },
+  { name: "Sungkyunkwan University", logo: "/visa-success/student-5.jpg" },
+  { name: "Kyung Hee University", logo: "/visa-success/student-6.jpg" },
   { name: "Ewha Womans University", logo: "/visa-success/student-7.jpg" },
   { name: "Pusan National University", logo: "/visa-success/student-8.jpg" },
 ];
