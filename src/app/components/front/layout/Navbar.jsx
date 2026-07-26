@@ -18,24 +18,27 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   useEffect(() => {
+    if (!isHomePage) return;
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHomePage]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
-
+  const isTransparent = isHomePage && !scrolled && !menuOpen;
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled || menuOpen ? "bg-white shadow-md" : "bg-transparent"
+        isTransparent ? "bg-transparent" : "bg-white sticky top-0"
       }`}
     >
       <nav className="container flex items-center justify-between py-2">
